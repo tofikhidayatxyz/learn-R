@@ -1,0 +1,102 @@
+No. Res;Jenis Kelamin;Kelas;Jenis Sekolah;BINDO;BING;MTK;Rata-Rata Nilai;Keterangan
+1;P;10;Swasta;70,0;72,0;42,5;61,5;Lulus
+2;Tidak Menjawab;11;Swasta;68,0;70,0;25,0;54,3;Tidak Lulus
+3;P;12;Negeri;68,0;84,0;37,5;63,2;Lulus
+4;P;10;Negeri;52,0;70,0;50,0;57,3;Tidak Lulus
+5;L;11;Negeri;72,0;74,0;35,0;60,3;Lulus
+6;P;12;Swasta;62,0;84,0;50,0;65,3;Lulus
+7;P;10;Swasta;46,0;26,0;32,5;34,8;Tidak Lulus
+8;L;11;Swasta;50,0;66,0;27,5;47,8;Tidak Lulus
+9;P;12;Negeri;58,0;82,0;32,5;57,5;Tidak Lulus
+10;P;10;Swasta;62,0;68,0;47,5;59,2;Tidak Lulus
+11;P;11;Swasta;76,0;80,0;45,0;67,0;Lulus
+12;P;12;Swasta;64,0;76,0;30,0;56,7;Tidak Lulus
+13;P;10;Swasta;76,0;76,0;25,0;59,0;Tidak Lulus
+14;P;10;Swasta;66,0;70,0;35,0;57,0;Tidak Lulus
+15;P;10;Negeri;56,0;48,0;25,0;43,0;Tidak Lulus
+16;P;10;Swasta;52,0;80,0;27,5;53,2;Tidak Lulus
+17;P;10;Negeri;42,0;50,0;27,5;39,8;Tidak Lulus
+18;P;11;Swasta;76,0;62,0;35,0;57,7;Tidak Lulus
+19;P;11;Swasta;72,0;64,0;57,0;64,3;Lulus
+20;P;11;Negeri;72,0;94,0;62,5;76,2;Lulus
+21;P;11;Negeri;68,0;88,0;45,0;67,0;Lulus
+22;P;11;Swasta;72,0;88,0;50,0;70,0;Lulus
+23;P;12;Swasta;58,0;78,0;47,5;61,2;Lulus
+24;P;12;Negeri;54,0;82,0;40,0;58,7;Tidak Lulus
+25;P;12;Swasta;64,0;62,0;22,5;49,5;Tidak Lulus
+26;P;12;Negeri;66,0;84,0;37,5;62,5;Lulus
+27;L;12;Negeri;78,0;76,0;57,5;70,5;Lulus
+28;P;10;Negeri;70,0;84,0;52,5;68,8;Lulus
+29;L;10;Negeri;82,0;74,0;52,5;69,5;Lulus
+30;L;10;Swasta;78,0;92,0;65,0;78,3;Lulus
+31;P;10;Swasta;50,0;30,0;20,0;33,3;Tidak Lulus
+32;Tidak Menjawab;10;Negeri;80,0;78,0;75,0;77,7;Lulus
+33;P;11;Negeri;76,0;72,0;50,0;66,0;Lulus
+34;P;11;Negeri;80,0;80,0;62,5;74,2;Lulus
+35;P;11;Negeri;84,0;82,0;45,0;70,3;Lulus
+36;L;11;Negeri;74,0;60,0;55,0;63,0;Lulus
+37;L;11;Negeri;72,0;56,0;35,0;54,3;Tidak Lulus
+38;L;12;Swasta;80,0;80,0;65,0;75,0;Lulus
+39;L;12;Negeri;74,0;68,0;25,0;55,7;Tidak Lulus
+40;L;12;Negeri;66,0;64,0;57,5;62,5;Lulus
+41;P;12;Negeri;86,0;78,0;65,0;76,3;Lulus
+42;P;12;Negeri;64,0;64,0;55,0;61,0;Lulus
+43;L;10;Swasta;72,0;86,0;40,0;66,0;Lulus
+44;P;11;Negeri;60,0;60,0;35,0;51,7;Tidak Lulus
+45;P;12;Swasta;72,0;78,0;35,0;61,7;Lulus
+46;P;10;Swasta;82,0;84,0;70,0;78,7;Lulus
+47;P;11;Swasta;72,0;80,0;45,0;65,7;Lulus
+48;P;12;Swasta;88,0;82,0;62,5;77,5;Lulus
+49;L;10;Negeri;76,0;88,0;52,5;72,2;Lulus
+50;L;11;Negeri;76,0;92,0;47,5;71,8;Lulus
+51;L;12;Negeri;72,0;76,0;50,0;66,0;Lulus
+52;P;10;Negeri;74,0;70,0;47,5;63,8;Lulus
+53;P;11;Negeri;70,0;68,0;65,0;67,7;Lulus
+54;L;12;Negeri;78,0;58,0;70,0;68,7;Lulus
+55;P;10;Swasta;72,0;68,0;70,0;70,0;Lulus
+56;P;11;Negeri;68,0;50,0;57,5;58,5;Tidak Lulus
+57;P;12;Negeri;62,0;62,0;70,0;64,7;Lulus
+58;P;10;Swasta;86,0;54,0;67,5;69,2;Lulus
+59;P;11;Negeri;60,0;72,0;57,5;63,2;Lulus
+60;L;12;Negeri;72,0;78,0;62,5;70,8;Lulus
+61;P;10;Negeri;38,0;52,0;50,0;46,7;Tidak Lulus
+62;P;10;Negeri;70,0;62,0;75,0;69,0;Lulus
+63;P;10;Negeri;72,0;46,0;85,0;67,7;Lulus
+64;P;10;Swasta;76,0;64,0;42,5;60,8;Lulus
+65;P;10;Negeri;84,0;70,0;52,5;68,8;Lulus
+66;P;11;Negeri;64,0;68,0;55,0;62,3;Lulus
+67;P;11;Negeri;76,0;70,0;80,0;75,3;Lulus
+68;L;11;Negeri;74,0;50,0;55,0;59,7;Tidak Lulus
+69;L;11;Swasta;76,0;54,0;42,5;57,5;Tidak Lulus
+70;P;11;Negeri;78,0;58,0;72,5;69,5;Lulus
+71;P;12;Negeri;76,0;60,0;45,0;60,3;Lulus
+72;P;12;Swasta;80,0;58,0;35,0;57,7;Tidak Lulus
+73;P;12;Negeri;74,0;64,0;42,5;60,2;Lulus
+74;L;12;Negeri;70,0;64,0;40,0;58,0;Tidak Lulus
+75;P;12;Negeri;88,0;70,0;72,5;76,8;Lulus
+76;P;10;Negeri;78,0;76,0;72,5;75,5;Lulus
+77;P;11;Negeri;70,0;66,0;32,5;56,2;Tidak Lulus
+78;P;12;Negeri;70,0;66,0;82,5;72,8;Lulus
+79;P;10;Swasta;74,0;72,0;60,0;68,7;Lulus
+80;L;11;Negeri;76,0;62,0;55,0;64,3;Lulus
+81;P;12;Negeri;86,0;62,0;55,0;67,7;Lulus
+82;L;10;Negeri;82,0;62,0;55,0;66,3;Lulus
+83;L;11;Swasta;72,0;68,0;62,5;67,5;Lulus
+84;P;12;Negeri;76,0;68,0;65,0;69,7;Lulus
+85;P;10;Negeri;86,0;66,0;95,0;82,3;Lulus
+86;P;11;Swasta;82,0;74,0;97,5;84,5;Lulus
+87;P;12;Negeri;76,0;56,0;55,0;62,3;Lulus
+88;P;10;Negeri;68,0;70,0;62,5;66,8;Lulus
+89;P;11;Negeri;72,0;62,0;62,5;65,5;Lulus
+90;P;12;Negeri;78,0;74,0;52,5;68,2;Lulus
+91;L;10;Swasta;70,0;66,0;52,5;62,8;Lulus
+92;P;11;Negeri;72,0;70,0;62,5;68,2;Lulus
+93;L;12;Negeri;68,0;68,0;80,0;72,0;Lulus
+94;L;10;Negeri;68,0;68,0;80,0;72,0;Lulus
+95;P;10;Negeri;82,0;80,0;72,5;78,2;Lulus
+96;P;10;Negeri;72,0;72,0;52,5;65,5;Lulus
+97;P;10;Swasta;78,0;68,0;52,5;66,2;Lulus
+98;P;10;Swasta;76,0;74,0;60,0;70,0;Lulus
+99;P;11;Swasta;70,0;66,0;55,0;63,7;Lulus
+100;Tidak Menjawab;11;Swasta;60,0;64,0;50,0;58,0;Tidak Lulus
+;;;;;;;;
