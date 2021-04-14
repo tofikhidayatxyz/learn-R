@@ -10,7 +10,6 @@ maxData = ceiling(max(baseValue) / 10)
 agregation = c()
 valueOfAgregate = c()
 dataValues = c()
-medianValues = c()
 
 
 for(itm in c(minData:maxData)) {
@@ -27,17 +26,9 @@ for(itm in c(minData:maxData)) {
     dataValues <- append(dataValues,
                          toString(sort.int(agregate)),
                          after= length(dataValues))
-    medianValues <- append(medianValues,
-                           minAgregate + ((maxAgregate - minAgregate) / 2),
-                           after = length(medianValues)
-                           )
   }
 }
 
-tableData <- data.frame(Nilai_Sebaran = agregation,
-                        Nilai_Pertengahan = medianValues,
-                        Jumlah_Sebaran = valueOfAgregate,
-                        Data_Sebaran = dataValues
-                        )
+tableData <- data.frame(agregation, valueOfAgregate, dataValues)
 
 datatable(tableData)
