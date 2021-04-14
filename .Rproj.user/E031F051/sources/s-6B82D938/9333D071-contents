@@ -33,7 +33,7 @@ for(itm in c(minData:maxData)) {
                               length(agregate),
                               after = length(valueOfAgregate))
     dataValues <- append(dataValues,
-                         toString(agregate),
+                         toString(sort.int(agregate)),
                          after= length(dataValues))
   }
 }
