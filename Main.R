@@ -17,17 +17,25 @@ sexData <- data[1:100, 2]
 uniqueSex <- unique(sexData, incomparables = FALSE)
 
 sexVal = c()
+sexLabel = c()
 
 for(itm in uniqueSex) {
+  dataSize <- length(sexData[sexData == itm])
   sexVal <- append(sexVal,
-           length(sexData[sexData == itm]),
+            dataSize,
             after=length(sexVal)
-            )
+          )
+  sexLabel <- append(sexLabel,
+                    paste(itm, ",",
+                          dataSize,
+                          "Orang,",
+                          dataSize * 100 / length(sexData), "%"),
+                    after = length(sexLabel))
 }
 
 
 pie(sexVal,
-    labels = uniqueSex,
+    labels = sexLabel,
     main = "Diagram Jenis Kelamin",
     col= colorsData,
     border="#ffffff"
@@ -37,16 +45,29 @@ pie(sexVal,
 classData <- data[1:100, 3]
 uniqueClass <- unique(classData, incomparables = FALSE)
 classVal = c()
+classLabel = c()
 
 for(itm in uniqueClass) {
+  dataSize <- length(classData[classData == itm])
   classVal <- append(classVal,
-                     length(classData[classData == itm]),
+                     dataSize,
                      after = length(classVal)
                      )
+  classLabel <- append(classLabel, 
+                        paste("Kelas",
+                            itm,
+                            ",",
+                            dataSize,
+                            "Orang,",
+                            dataSize * 100 / length(classData),
+                            "%"
+                            ),
+                        after = length(classLabel)
+                      )
 }
 
 pie(classVal,
-    labels = uniqueClass,
+    labels = classLabel,
     main = "Diagram Kelas",
     col= colorsData[2:5],
     border="#ffffff"
@@ -56,16 +77,28 @@ pie(classVal,
 schoolData <- data[1:100, 4]
 uniqueSchool <- unique(schoolData, incomparables = FALSE)
 schoolVal = c()
+schoolLabel = c()
 
 for(itm in uniqueSchool) {
+  dataSize <- length(schoolData[schoolData == itm])
   schoolVal <- append(schoolVal,
-                      length(schoolData[schoolData == itm]),
+                      dataSize,
                       after= length(schoolVal)
                       )
+  schoolLabel <- append(schoolLabel,
+                    paste(itm,
+                        ",",
+                        dataSize,
+                        "Orang",
+                        ",",
+                        dataSize * 100 / length(schoolData),
+                        "%"
+                        ),
+                      after= length(schoolLabel))
 }
 
 pie(schoolVal,
-    labels = uniqueSchool,
+    labels = schoolLabel,
     main = "Diagram Jenis Sekolah",
     col= colorsData[4:6],
     border="#ffffff"
@@ -77,16 +110,29 @@ pie(schoolVal,
 infoData <- data[1:100, 9]
 uniqueInfo <- unique(infoData, incomparables = FALSE)
 infoVal = c()
+infoLabel = c()
 
 for(itm in uniqueInfo) {
+  dataSize <- length(infoData[infoData == itm])
   infoVal <- append(infoVal,
-                      length(infoData[infoData == itm]),
+                      dataSize,
                       after= length(infoVal)
                       )
+  infoLabel <- append(infoLabel, 
+                    paste(itm,
+                          ",",
+                          dataSize,
+                          "Orang,",
+                          dataSize * 100 / length(infoData),
+                          "%"
+                          ),
+                    after = length(infoLabel)
+                  )
+
 }
 
 pie(infoVal,
-    labels = uniqueInfo,
+    labels = infoLabel,
     main = "Diagram Keterangan",
     col= colorsData[2:4],
     border="#ffffff"
@@ -98,14 +144,20 @@ study.indo <- mean(data[1:100, 5])
 study.math <- mean(data[1:100, 7])
 study.ingr <- mean(data[1:100, 6])
 
-barplot(
-  c(study.indo, study.math, study.ingr),
-  names.arg = c("B Indonesia", "Matematika", "B Inggris"),
-  main = "Rata-Rata Nilai Siswa",
-  col = colorsData,
-  xlab = "Mata Pelajaran",
-  ylab = "Rata Rata Nilai"
+studyData = c(study.indo, study.math, study.ingr)
+
+infoBar <- barplot(
+        studyData,
+        names.arg = c("B Indonesia", "Matematika", "B Inggris"),
+        main = "Rata-Rata Nilai Siswa",
+        col = colorsData,
+        xlab = "Mata Pelajaran",
+        ylab = "Rata Rata Nilai",
+        density= 15,
+        ylim = c(0, 100)
   )
+
+text(infoBar, studyData, paste(studyData), cex=1) 
 
 
 # mosaicplot(study.indo,main="Smokers",xlab="Status",ylab="Economic Class", dir=c("v","h"))
