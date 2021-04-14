@@ -19,7 +19,7 @@ for(itm in c(minData:maxData)) {
   maxAgregate = max(agregate)
   if(minAgregate != Inf & maxAgregate != Inf) {
     agregation <- append(agregation,
-                         paste(minAgregate," - ", maxAgregate),
+                         paste(minAgregate, " - ", maxAgregate),
                          after = length(agregation)) 
     valueOfAgregate <- append(valueOfAgregate,
                               length(agregate),
