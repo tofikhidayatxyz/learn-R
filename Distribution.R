@@ -65,6 +65,7 @@ tableData <- data.frame(Interval = agregation,
                         Data_Sebaran = dataValues
 )
 
+print(paste("Max Data", max(baseValue)))
 
 datatable(tableData, options= list(
   pageLength = 20

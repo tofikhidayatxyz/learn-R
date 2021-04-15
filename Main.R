@@ -12,6 +12,21 @@ colorsData = c(
   "#7868e6"
 )
 
+# average lulus
+graduatedStudent = subset(data, data[9] == "Lulus")[1:100, 8]
+graduatedStudent = graduatedStudent[!is.na(graduatedStudent)]
+notGraduatedStudent =  subset(data, data[9] == "Tidak Lulus")[1:100, 8]
+notGraduatedStudent = notGraduatedStudent[!is.na(notGraduatedStudent)]
+
+# averageGraduation <- data.frame(
+#   Lulus = graduatedStudent,
+#   TidakLulus = notGraduatedStudent
+# )
+
+print(paste("Nilai Maksimum Lulus", max(graduatedStudent)))
+boxplot(graduatedStudent, col = colorsData[5], main = "Siswa Lulus")
+boxplot(notGraduatedStudent, col = colorsData[6], main = "Siswa Tidak Lulus")
+
 # jenis kelamin
 sexData <- data[1:100, 2]
 uniqueSex <- unique(sexData, incomparables = FALSE)
@@ -157,7 +172,10 @@ infoBar <- barplot(
         ylim = c(0, 100)
   )
 
-text(infoBar, studyData, paste(studyData), cex=1) 
+text(infoBar, studyData, paste(studyData), cex=1)
+
+
+
 
 
 # mosaicplot(study.indo,main="Smokers",xlab="Status",ylab="Economic Class", dir=c("v","h"))
