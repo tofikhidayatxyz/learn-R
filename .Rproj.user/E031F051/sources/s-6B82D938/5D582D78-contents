@@ -1,7 +1,8 @@
-data = read.csv2('./data/siswa.csv')
 library(shiny)
 library(DT)
+library(plyr)
 
+data = read.csv2('./data/siswa.csv')
 
 colorsData = c(
   "#f0c929",
@@ -23,9 +24,26 @@ notGraduatedStudent = notGraduatedStudent[!is.na(notGraduatedStudent)]
 #   TidakLulus = notGraduatedStudent
 # )
 
-print(paste("Nilai Maksimum Lulus", max(graduatedStudent)))
-boxplot(graduatedStudent, col = colorsData[5], main = "Siswa Lulus")
-boxplot(notGraduatedStudent, col = colorsData[6], main = "Siswa Tidak Lulus")
+# print(paste("Nilai Maksimum Lulus", max(graduatedStudent)))
+# print(paste("Nilai Mininum Lulus", min(graduatedStudent)))
+# print(paste("Nilai Median Lulus", median(graduatedStudent)))
+# print(paste("Nilai Mean Lulus", mean(notGraduatedStudent)))
+# print(paste("Nilai Quartil Lulus", quantile(graduatedStudent)))
+
+boxStats = boxplot.stats(graduatedStudent)
+
+summary(graduatedStudent)
+
+plotData <- rbind.fill(data.frame(Lulus = graduatedStudent),
+                       data.frame(TidakLulus = notGraduatedStudent))
+
+plotEx = boxplot.stats(plotData)
+
+boxplot(plotData, col = colorsData[3:6], main = "Rata Rata siswa")
+# boxplot(notGraduatedStudent, col = colorsData[6], main = "Siswa Tidak Lulus")
+
+
+# print(plotEx)
 
 # jenis kelamin
 sexData <- data[1:100, 2]
