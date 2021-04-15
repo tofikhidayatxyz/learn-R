@@ -24,21 +24,19 @@ for(itm in c(minData:maxData)) {
     valueOfAgregate <- append(valueOfAgregate,
                               length(agregate),
                               after = length(valueOfAgregate))
-    
     dataValues <- append(dataValues,
                          toString(sort.int(agregate)),
                          after= length(dataValues))
-    
     medianValues <- append(medianValues,
-                           median(agregate),
+                           minAgregate + ((maxAgregate - minAgregate) / 2),
                            after = length(medianValues)
                            )
   }
 }
 
-tableData <- data.frame(Interval = agregation,
-                        Median = medianValues,
-                        Jumlah = valueOfAgregate,
+tableData <- data.frame(Nilai_Sebaran = agregation,
+                        Nilai_Pertengahan = medianValues,
+                        Jumlah_Sebaran = valueOfAgregate,
                         Data_Sebaran = dataValues
                         )
 
